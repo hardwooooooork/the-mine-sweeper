@@ -4,7 +4,7 @@ React.js 을 이용하여 만든 지뢰찾기 입니다.
 ![ex_screenshot](./imgs/img1.gif)
 
 
-## 테스트 방법
+## 실행 방법
 1. node.js , npm 을 설치 합니다.
 2. the-mine-sweeper 폴더로 이동후에 다음 명령어를 실행합니다.
     ```shell
