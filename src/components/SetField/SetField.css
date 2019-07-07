@@ -1,0 +1,164 @@
+/* SetField.css */
+#SetField{
+    height: 100%;
+    width: 600px;
+    margin-top: 15em;
+    margin-bottom: 15em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#SetField .form-wrap{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+#SetField .form-wrap .mine-field{
+    width: 30em;
+    height: auto;
+    display: inline-grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 0px;
+    grid-auto-rows: minmax(3em, auto);
+}
+
+
+label.this-is-mine:after{
+    background: #292929 !important;
+}
+
+.is-mine:after{
+    content: '💣' !important;
+    pointer-events: none;
+    visibility: visible !important;
+    font-size: 2rem !important;
+    /* padding-top: 0.5rem !important; */
+}
+
+.find-mine-0:after{
+    content: '0' !important;
+    color: #ffffff !important;
+    pointer-events: none;
+    visibility: visible !important;
+    font-size: 2rem !important;
+    /* padding-top: 0.5rem !important; */
+}
+.find-mine-1:after{
+    content: '1' !important;
+    color: #0000ff !important;
+    pointer-events: none;
+    visibility: visible !important;
+    font-size: 2rem !important;
+    /* padding-top: 0.5rem !important; */
+}
+.find-mine-2:after{
+    content: '2' !important;
+    color: #3e8f26 !important;
+    pointer-events: none;
+    visibility: visible !important;
+    font-size: 2rem !important;
+    /* padding-top: 0.5rem !important; */
+}
+.find-mine-3:after{
+    content: '3' !important;
+    color: #fb4a4a !important;
+    pointer-events: none;
+    visibility: visible !important;
+    font-size: 2rem !important;
+    /* padding-top: 0.5rem !important; */
+}
+.find-mine-4:after{
+    content: '4' !important;
+    color: #183d81 !important;
+    pointer-events: none;
+    visibility: visible !important;
+    font-size: 2rem !important;
+    /* padding-top: 0.5rem !important; */
+}
+.find-mine-5:after{
+    content: '5' !important;
+    color: #91302f !important;
+    pointer-events: none;
+    visibility: visible !important;
+    font-size: 2rem !important;
+    /* padding-top: 0.5rem !important; */
+}
+.find-mine-6:after{
+    content: '6' !important;
+    color: #2b9191 !important;
+    pointer-events: none;
+    visibility: visible !important;
+    font-size: 2rem !important;
+    /* padding-top: 0.5rem !important; */
+}
+.find-mine-7:after{
+    content: '7' !important;
+    color: #161616 !important;
+    pointer-events: none;
+    visibility: visible !important;
+    font-size: 2rem !important;
+    /* padding-top: 0.5rem !important; */
+}
+.find-mine-8:after{
+    content: '8' !important;
+    color: #545759 !important;
+    pointer-events: none;
+    visibility: visible !important;
+    font-size: 2rem !important;
+    /* padding-top: 0.5rem !important; */
+}
+
+.not-mine:after{
+    content: ''
+}
+
+#SetField .mine-field .mine label {
+    display: block;
+    position: relative;
+    width: 3em;
+    height: 3em;
+    background: #c0c0c0;
+    box-sizing: border-box;
+    border: solid #808080;
+    border-width: 0 1px 1px 0;
+    flex: 0 0 11.1111111111%;
+    overflow: hidden;
+    cursor: pointer;
+    pointer-events: none;
+}
+label {
+    cursor: default;
+}
+
+
+.mine label:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: #c0c0c0;
+    border: 2px outset #ececec;
+    font-size: .75rem;
+    text-align: center;
+    pointer-events: auto;
+}
+.mine label:before {
+    content: '';
+    font-size: .9rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-area {
+    text-align: center;
+    margin-top: 15px;
+}
