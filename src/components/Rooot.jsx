@@ -28,7 +28,10 @@ export default class Rooot extends Component {
  */
     onClickHandeler = (key)=> {
         let { fieldset, maxMineNum } = this.state
-        if (maxMineNum >= (fieldset.filter(o => o).length +1 )){
+        if (  
+            ((fieldset[key] === false) && (maxMineNum >= (fieldset.filter(o => o).length + 1))) ||
+            ((fieldset[key] === true) && (maxMineNum >= (fieldset.filter(o => o).length )))
+        ){
             fieldset[key] = !fieldset[key];
             this.setState(fieldset);
         }
