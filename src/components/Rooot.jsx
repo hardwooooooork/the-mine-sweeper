@@ -112,7 +112,7 @@ export default class Rooot extends Component {
  */
     findMineNorth = ( key )=>{
         const { fieldset } = this.state
-        if( fieldset[key] === true ) return false;
+        // if( fieldset[key] === true ) return false;
         if( key < COL ) return false;
         try {
             return fieldset[key - COL ] ? 1 : 0;
